@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="mt-4 px-4 sm:px-4 md:px-2 lg:px-0">
       <div className="flex items-center justify-between gap-2">
         <h3 className="font-bold text-black text-[15px] sm:text-[16px] truncate">
-          Admin Dashboard
+          Dashboard
         </h3>
 
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">

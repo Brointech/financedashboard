@@ -15,7 +15,7 @@ import {
 } from "react-icons/fi";
 
 const navItems = [
-  { label: "Overview", href: "/dashboard", icon: FiGrid },
+  { label: "Overview", href: "/herosection", icon: FiGrid },
   { label: "Transactions", href: "/transactions", icon: FiRepeat },
   { label: "Cards", href: "/cards", icon: FiCreditCard },
   { label: "Analytics", href: "/analytics", icon: FiPieChart },
@@ -31,7 +31,7 @@ export default function Sidebar() {
     <>
       {/* Mobile top bar trigger */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200 lg:hidden">
-        <span className="font-bold text-black text-[16px]">Finance</span>
+        {/* <span className="font-bold text-black text-[16px]">Finance</span> */}
         <button
           type="button"
           aria-label="Toggle menu"
