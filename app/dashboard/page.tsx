@@ -46,7 +46,7 @@ export default function DashboardPage() {
         <TrafficChart />
       </section>
 
-      <RecentTransactions />
+      {/* <RecentTransactions /> */}
     </DashboardLayout>
   );
 }

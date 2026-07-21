@@ -26,7 +26,7 @@ const traffic = [
 
 export default function TrafficChart() {
   return (
-    <div className="bg-white rounded-xl border p-6">
+    <div className="bg-white rounded-xl p-6">
       <h3 className="text-lg font-semibold mb-6">Traffic Source</h3>
 
       <ResponsiveContainer width="100%" height={320}>

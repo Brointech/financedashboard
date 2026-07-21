@@ -2,7 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function VerificationBanner() {
   return (
-    <div className="mt-6 rounded-xl bg-white p-5 border">
+    <div className="mt-6 rounded-xl bg-white p-3 ">
       <div className="flex gap-3">
         <CheckCircle2 className="text-blue-600" />
 

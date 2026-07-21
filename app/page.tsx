@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* Recent Transactions */}
-      <RecentTransactions />
+      {/* <RecentTransactions /> */}
     </DashboardLayout>
   );
 }

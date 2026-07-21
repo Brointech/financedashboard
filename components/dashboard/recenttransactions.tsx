@@ -15,7 +15,7 @@ export default function RecentTransactions() {
 
         <tbody>
           <tr className="border-t">
-            <td className="py-4">John Doe</td>
+            <td className="py-4">John</td>
             <td>₦20,000</td>
             <td className="text-green-600">Successful</td>
             <td>Today</td>
