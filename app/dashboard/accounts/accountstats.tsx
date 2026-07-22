@@ -13,7 +13,7 @@ export default function AccountStats() {
     <div className="grid gap-6 lg:grid-cols-3">
       <AccountStatCard
         title="Total Balance"
-        value="₦2,450,000.00"
+        value="₦50,000.00"
         subtitle="Nigerian Naira"
         icon={Wallet}
         iconBg="bg-violet-100"
@@ -31,7 +31,7 @@ export default function AccountStats() {
 
       <AccountStatCard
         title="Total Collections"
-        value="₦1,250,000.00"
+        value="₦50,000.00"
         subtitle="This month"
         trend="↑ 12.5%"
         positive
