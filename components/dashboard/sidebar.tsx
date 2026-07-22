@@ -21,7 +21,7 @@ import { usePathname } from "next/navigation";
 
 const menus = [
   { icon: LayoutDashboard, title: "Dashboard", href: "/dashboard" },
-  { icon: Wallet, title: "Accounts", href: "/dashboard/accounts" },
+  { icon: Wallet, title: "Accounts", href: "/dashboard/account" },
   { icon: Send, title: "Transfer", href: "/dashboard/transfer" },
   { icon: History, title: "History", href: "/dashboard/history" },
   { icon: Users, title: "Customers", href: "/dashboard/customers" },

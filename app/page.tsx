@@ -69,7 +69,7 @@
 
 "use client";
 
-import DashboardLayout from "@/app/dashboard/dashboardlayout";
+import DashboardLayout from "@/app/dashboard/layout";
 import Header from "@/components/dashboard/header";
 import VerificationBanner from "@/components/dashboard/verificationbanner";
 import StatsCard from "@/components/dashboard/statscard";
@@ -86,7 +86,7 @@ export default function Home() {
 
       <VerificationBanner />
 
-      <section className="mt-8">
+      <section className="mt-2">
         <h2 className="text-3xl font-bold">Payments Dashboard</h2>
 
         <p className="text-gray-500 mt-2">

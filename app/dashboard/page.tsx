@@ -1,4 +1,4 @@
-import DashboardLayout from "@/app/dashboard/dashboardlayout";
+import DashboardLayout from "@/app/dashboard/layout";
 import VerificationBanner from "@/components/dashboard/verificationbanner";
 import Header from "@/components/dashboard/header";
 import StatsCard from "@/components/dashboard/statscard";
@@ -25,24 +25,10 @@ export default function DashboardPage() {
 
       {/* Stats */}
 
-      {/* <section className="grid gap-5 mt-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
+      <section className="grid gap-5 mt-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
         <StatsCard
           title="Today's Collection"
           value="₦0"
-          change="+3.3%"
-          positive
-        />
-
-        <StatsCard title="Today's Expenses" value="₦0" change="-3.3%" />
-
-        <StatsCard title="Joined Today" value="0" change="+3.3%" positive />
-
-        <StatsCard title="Total Customers" value="0" change="+3.3%" positive />
-      </section> */}
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-        <StatsCard
-          title="Today's Collection"
-          value="₦30,000"
           change="+3.3%"
           positive
           icon={Wallet}
@@ -50,28 +36,28 @@ export default function DashboardPage() {
 
         <StatsCard
           title="Today's Expenses"
-          value="₦10,000"
+          value="₦0"
           change="-3.3%"
-          positive={false}
           icon={CreditCard}
         />
 
         <StatsCard
           title="Joined Today"
-          value="25"
-          change="+8.4%"
+          value="0"
+          change="+3.3%"
           positive
           icon={UserPlus}
         />
 
         <StatsCard
           title="Total Customers"
-          value="1,240"
-          change="+12%"
+          value="0"
+          change="+3.3%"
           positive
           icon={Users}
         />
-      </div>
+      </section>
+
       {/* Charts */}
 
       <section className="grid xl:grid-cols-2 gap-6 mt-8">
