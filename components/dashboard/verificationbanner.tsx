@@ -18,7 +18,7 @@ export default function VerificationBanner() {
 
           <p className="mt-1 max-w-xl text-sm text-gray-600">
             We've received your verification documents and they're currently
-            being reviewed. This usually takes less than 24 hours.
+            being reviewed.
           </p>
         </div>
       </div>

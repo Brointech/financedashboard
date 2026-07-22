@@ -36,8 +36,7 @@ export default function SalesChart() {
           <XAxis dataKey="month" />
 
           <Tooltip />
-
-          <Bar dataKey="sales" radius={[5, 5, 0, 0]} />
+          <Bar dataKey="sales" fill="#155DFC" radius={[8, 8, 0, 0]} />
         </BarChart>
       </ResponsiveContainer>
     </div>
