@@ -77,6 +77,8 @@ import SalesChart from "@/components/dashboard/salescharts";
 import TrafficChart from "@/components/dashboard/trafficcharts";
 import RecentTransactions from "@/components/dashboard/recenttransactions";
 
+import { Wallet, CreditCard, Users, UserPlus } from "lucide-react";
+
 export default function Home() {
   return (
     <DashboardLayout>
@@ -99,13 +101,31 @@ export default function Home() {
           value="₦0"
           change="+3.3%"
           positive
+          icon={Wallet}
         />
 
-        <StatsCard title="Today's Expenses" value="₦0" change="-3.3%" />
+        <StatsCard
+          title="Today's Expenses"
+          value="₦0"
+          change="-3.3%"
+          icon={CreditCard}
+        />
 
-        <StatsCard title="Joined Today" value="0" change="+3.3%" positive />
+        <StatsCard
+          title="Joined Today"
+          value="0"
+          change="+3.3%"
+          positive
+          icon={UserPlus}
+        />
 
-        <StatsCard title="Total Customers" value="0" change="+3.3%" positive />
+        <StatsCard
+          title="Total Customers"
+          value="0"
+          change="+3.3%"
+          positive
+          icon={Users}
+        />
       </section>
 
       {/* Charts */}
