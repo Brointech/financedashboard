@@ -25,7 +25,7 @@ export default function AccountItem({
   primary = false,
 }: Props) {
   return (
-    <div className="grid grid-cols-1 gap-6 border-b border-gray-100 px-6 py-6 transition-all hover:bg-gray-50 md:grid-cols-[2fr_1fr_auto_auto] md:items-center">
+    <div className="grid grid-cols-1 gap-6 border-b border-gray-100 px-4 py-4 transition-all hover:bg-gray-50 md:grid-cols-[2fr_1fr_auto_auto] md:items-center">
       {/* Left */}
       <div className="flex items-center gap-4">
         <div
@@ -36,16 +36,16 @@ export default function AccountItem({
 
         <div>
           <div className="flex flex-wrap items-center gap-3">
-            <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
+            <h3 className="text-base font-semibold text-gray-900">{title}</h3>
 
             {primary && (
-              <span className="rounded-full bg-violet-100 px-3 py-1 text-sm font-semibold text-violet-700">
+              <span className="rounded-full bg-violet-100 px-3 py-1 text-xs font-semibold text-violet-700">
                 Primary
               </span>
             )}
           </div>
 
-          <p className="mt-1 text-gray-500">
+          <p className="mt-1 text-gray-500 text-xs">
             {type} • {accountNumber}
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function AccountItem({
 
       {/* Balance */}
       <div>
-        <h3 className="text-2xl font-bold">{balance}</h3>
+        <h3 className="text-base font-bold">{balance}</h3>
 
         <p className="text-gray-500 mt-1">Available</p>
       </div>

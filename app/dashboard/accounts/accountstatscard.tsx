@@ -27,18 +27,18 @@ export default function AccountStatCard({
     <div className="rounded-2xl border border-gray-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg">
       <div className="flex items-start gap-5">
         <div
-          className={`flex h-16 w-16 items-center justify-center rounded-2xl ${iconBg}`}
+          className={`flex h-10 w-10 items-center justify-center rounded-2xl ${iconBg}`}
         >
-          <Icon className={`h-8 w-8 ${iconColor}`} />
+          <Icon className={`h-6 w-6 ${iconColor}`} />
         </div>
 
         <div className="flex-1">
           <p className="text-gray-500">{title}</p>
 
-          <h2 className="mt-2 text-4xl font-bold tracking-tight">{value}</h2>
+          <h2 className="mt-2 text-lg font-bold tracking-tight">{value}</h2>
 
           <div className="mt-2 flex items-center gap-3">
-            <p className="text-gray-500">{subtitle}</p>
+            <p className="text-gray-500 text-sm">{subtitle}</p>
 
             {trend && (
               <span

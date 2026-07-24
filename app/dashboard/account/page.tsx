@@ -1,5 +1,7 @@
 import AccountHeader from "@/app/dashboard/accounts/accountheader";
 import AccountStats from "@/app/dashboard/accounts/accountstats";
+import AccountFilters from "@/app/dashboard/accounts/accountfilters";
+import AccountList from "../accounts/accountlist";
 
 export default function AccountsPage() {
   return (
@@ -7,6 +9,10 @@ export default function AccountsPage() {
       <AccountHeader />
 
       <AccountStats />
+
+      <AccountFilters />
+
+      <AccountList />
     </div>
   );
 }

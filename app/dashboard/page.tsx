@@ -7,7 +7,6 @@ import TrafficChart from "@/components/dashboard/trafficcharts";
 import RecentTransactions from "@/components/dashboard/recenttransactions";
 
 import { Wallet, CreditCard, Users, UserPlus } from "lucide-react";
-
 export default function DashboardPage() {
   return (
     <DashboardLayout>
