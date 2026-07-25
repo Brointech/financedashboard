@@ -24,7 +24,7 @@ export default function AccountStatCard({
   positive = true,
 }: Props) {
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg">
+    <div className="rounded-2xl border border-gray-100 bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg">
       <div className="flex items-start gap-5">
         <div
           className={`flex h-10 w-10 items-center justify-center rounded-2xl ${iconBg}`}

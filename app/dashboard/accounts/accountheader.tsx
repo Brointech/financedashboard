@@ -4,11 +4,11 @@ import { Plus } from "lucide-react";
 
 export default function AccountHeader() {
   return (
-    <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-      <div>
+    <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-10 lg:-mt-10">
         <h1 className="text-xl font-bold text-gray-900">Accounts</h1>
 
-        <p className="mt-1 text-md text-gray-500">
+        <p className="mt-1 text-sm text-gray-500">
           Manage all your accounts and wallets in one place.
         </p>
       </div>

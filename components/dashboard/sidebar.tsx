@@ -94,7 +94,7 @@ export default function Sidebar() {
           <Menu size={26} />
         </button>
 
-        <h2 className="font-semibold text-lg">Dashboard</h2>
+        {/* <h2 className="font-semibold text-lg">Dashboard</h2> */}
 
         <div className="w-6" />
       </div>

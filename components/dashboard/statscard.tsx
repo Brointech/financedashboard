@@ -1,7 +1,5 @@
 import { LucideIcon, TrendingDown, TrendingUp } from "lucide-react";
 
-import { Wallet, CreditCard, Users, UserPlus } from "lucide-react";
-
 interface Props {
   title: string;
   value: string;
@@ -23,13 +21,7 @@ export default function StatsCard({
 
       <div className="flex items-center justify-between gap-4 mt-3">
         <h2 className="text-3xl font-bold">{value}</h2>
-        {/* <span
-          className={`font-semibold ${
-            positive ? "text-green-500" : "text-red-500"
-          }`}
-        >
-          {change}
-        </span> */}
+
         <div
           className={`mt-2 inline-flex items-center gap-1 rounded-full px-2 py-1 text-sm font-semibold ${
             positive ? "bg-green-50 text-green-600" : "bg-red-50 text-red-600"
