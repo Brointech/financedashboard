@@ -35,61 +35,21 @@ const bottom = [
   { icon: LogOut, title: "Logout", href: "/dashboard/logout" },
 ];
 
-// export default function Sidebar() {
-
-//   return (
-
-//       <aside className="hidden lg:flex fixed left-0 top-0 h-screen w-72 bg-gray-100 border-r flex-col justify-between">
-//         <div>
-//           <div className="p-6 border-b flex items-center gap-3">
-//             <span className="flex items-center justify-center w-6 h-6 rounded-full bg-black text-white text-[11px] font-semibold shrink-0">
-//               AI
-//             </span>
-//             <p className="text-black font-semibold text-[13px] sm:text-[14px] truncate hidden xs:block sm:block">
-//               {" "}
-//               Adekunle Isreal
-//             </p>
-//           </div>
-
-//           <nav className="p-2 space-y-0">
-//             {menus.map((item) => (
-
-//               <button
-//                 key={item.title}
-//                 className="flex items-center gap-3 w-full px-4 py-3 rounded-lg hover:bg-gray-100"
-//               >
-//                 <item.icon size={18} />
-
-//                 {item.title}
-//               </button>
-//             ))}
-//           </nav>
-//         </div>
-
-//         <div className="p-2 space-y-0">
-//           {bottom.map((item) => (
-//             <button
-//               key={item.title}
-//               className="flex items-center gap-3 w-full px-4 py-3 rounded-lg hover:bg-gray-100"
-//             >
-//               <item.icon size={18} />
-//               {item.title}
-//             </button>
-//           ))}
-//         </div>
-//       </aside>
-
-//   );
-// }
-
 export default function Sidebar() {
-  const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === "/dashboard") {
+      return pathname === "/dashboard";
+    }
+    return pathname === href || pathname.startsWith(href + "/");
+  };
 
   return (
     <>
       {/* Mobile Header */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-white border-b flex items-center justify-between px-5 z-40">
+      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-white border-b border-gray-200 flex items-center justify-between px-5 z-40">
         <button onClick={() => setOpen(true)}>
           <Menu size={26} />
         </button>
@@ -110,14 +70,14 @@ export default function Sidebar() {
       {/* Sidebar */}
       <aside
         className={`
-          fixed left-0 top-0 h-screen w-60 bg-gray-100 border-r flex flex-col justify-between z-50
+          fixed left-0 top-0 h-screen w-60 bg-gray-100 border-r border-gray-200 flex flex-col justify-between z-50
           transform transition-transform duration-300 ease-in-out
           ${open ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
       >
         <div>
           {/* Logo */}
-          <div className="p-6 border-b flex items-center justify-between">
+          <div className="p-6 border-b border-gray-200 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-black text-white text-xs font-semibold">
                 AI
@@ -135,8 +95,7 @@ export default function Sidebar() {
           {/* Main Menu */}
           <nav className="p-3 space-y-2">
             {menus.map((item) => {
-              const active =
-                pathname === item.href || pathname.startsWith(item.href + "/");
+              const active = isActive(item.href);
 
               return (
                 <Link

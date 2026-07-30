@@ -1,71 +1,21 @@
-import DashboardLayout from "@/app/dashboard/layout";
-import VerificationBanner from "@/components/dashboard/verificationbanner";
-import Header from "@/components/dashboard/header";
-import StatsCard from "@/components/dashboard/statscard";
-import SalesChart from "@/components/dashboard/salescharts";
-import TrafficChart from "@/components/dashboard/trafficcharts";
-import RecentTransactions from "@/components/dashboard/recenttransactions";
+import Link from "next/link";
 
-import { Wallet, CreditCard, Users, UserPlus } from "lucide-react";
-export default function DashboardPage() {
+export default function LandingPage() {
   return (
-    <DashboardLayout>
-      <Header />
-
-      <VerificationBanner />
-
-      <div className="mt-8">
-        <h2 className="text-3xl font-bold">Payments Dashboard</h2>
-
-        <p className="text-gray-500 mt-2">
-          Monitor your transactions and business insights.
-        </p>
-      </div>
-
-      {/* Stats */}
-
-      <section className="grid gap-5 mt-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
-        <StatsCard
-          title="Today's Collection"
-          value="₦0"
-          change="+3.3%"
-          positive
-          icon={Wallet}
-        />
-
-        <StatsCard
-          title="Today's Expenses"
-          value="₦0"
-          change="-3.3%"
-          icon={CreditCard}
-        />
-
-        <StatsCard
-          title="Joined Today"
-          value="0"
-          change="+3.3%"
-          positive
-          icon={UserPlus}
-        />
-
-        <StatsCard
-          title="Total Customers"
-          value="0"
-          change="+3.3%"
-          positive
-          icon={Users}
-        />
-      </section>
-
-      {/* Charts */}
-
-      <section className="grid xl:grid-cols-2 gap-6 mt-8">
-        <SalesChart />
-
-        <TrafficChart />
-      </section>
-
-      {/* <RecentTransactions /> */}
-    </DashboardLayout>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-900 text-white p-6">
+      <h1 className="text-3xl xs:text-center sm:text-left font-extrabold tracking-tight mb-4">
+        Admin Dashboard
+      </h1>
+      <p className="text-slate-400 max-w-md text-center mb-8">
+        Monitor real-time metrics, system performance, and user activity metrics
+        from a single interface.
+      </p>
+      <Link
+        href="/dashboard"
+        className="px-6 py-3 bg-bacground hover:bg-primary-hover rounded-lg font-medium transition-colors shadow-lg"
+      >
+        Enter Dashboard →
+      </Link>
+    </div>
   );
 }
